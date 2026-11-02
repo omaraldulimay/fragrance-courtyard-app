@@ -10,16 +10,17 @@ const WEB_TAB_BAR_SPACE = Platform.OS === 'web' ? 96 : 0;
 
 type ScreenProps = {
   children: ReactNode;
-  // Product pages sit under a transparent header and handle the top edge themselves.
+  // Content starts at the very top and spans the full width, e.g. a hero image.
   edgeToEdge?: boolean;
+  // Screens pushed over the tabs, like the product page, have no tab bar to leave room for.
+  withTabBar?: boolean;
   footer?: ReactNode;
 };
 
-export function Screen({ children, edgeToEdge = false, footer }: ScreenProps) {
+export function Screen({ children, edgeToEdge = false, withTabBar = true, footer }: ScreenProps) {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
-  // Edge-to-edge screens are pushed on top of the tabs, so no tab bar overlaps them.
-  const tabBarSpace = edgeToEdge ? 0 : WEB_TAB_BAR_SPACE;
+  const tabBarSpace = withTabBar ? WEB_TAB_BAR_SPACE : 0;
 
   return (
     <View style={[styles.root, { backgroundColor: theme.background }]}>

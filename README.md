@@ -25,6 +25,8 @@ everything customer-facing is the brand's own.
 
 ## Features
 
+- **Full-screen campaign hero** – swipeable lifestyle photos of people wearing fragrance, each leading to
+  a different part of the shop (collection, scent finder, attar oils, evening scents).
 - **Scent finder** – mood, occasion, season, intensity and up to three favourite notes. Recommendations come
   with a match score and the reasons behind it ("woody & spiced, the way you like it", "contains saffron").
 - **Catalogue** – filter by scent family and format (perfume or attar oil), sort by price, search by name or note.
@@ -101,6 +103,16 @@ npm run format:check    # Prettier
 GitHub Actions runs all of these plus a web build on every push. The main user journey (scent finder →
 add to cart → catalogue filter → wishlist → product size → cart quantity → reload) was also walked through
 end to end in a browser against the live mock store.
+
+## Photo credits
+
+The campaign photos are from [Pexels](https://www.pexels.com/license/) and free to use. They were chosen
+so that no real fragrance brand is visible. Product images come from Shopify's mock store.
+
+- [Andrea Piacquadio](https://www.pexels.com/photo/3774940/) – woman spraying perfume on her neck
+- [Ron Lach](https://www.pexels.com/photo/8625562/) – fragrance mist
+- [حثل](https://www.pexels.com/photo/21614757/) – hands with an attar oil
+- [Badis Benkhelil](https://www.pexels.com/photo/28557815/) – man in a suit spraying perfume
 
 ## Possible next steps
 

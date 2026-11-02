@@ -30,7 +30,7 @@ export default function ProductScreen() {
   if (isPending || error || !product) {
     return (
       <View style={styles.root}>
-        <Screen>
+        <Screen withTabBar={false}>
           {isPending ? <LoadingState /> : null}
           {error ? <ErrorState message={error.message} onRetry={refetch} /> : null}
           {!isPending && !error ? <ErrorState message="Diesen Duft gibt es nicht mehr." /> : null}
@@ -49,6 +49,7 @@ export default function ProductScreen() {
     <View style={styles.root}>
       <Screen
         edgeToEdge
+        withTabBar={false}
         footer={
           <View style={styles.footer}>
             <View>
