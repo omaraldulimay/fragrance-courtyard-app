@@ -1,5 +1,9 @@
 # Courtyard – Fragrance Shopping App
 
+[![CI](https://github.com/omaraldulimay/fragrance-courtyard-app/actions/workflows/ci.yml/badge.svg)](https://github.com/omaraldulimay/fragrance-courtyard-app/actions/workflows/ci.yml)
+
+▶ **Try it in the browser:** [interactive demo on my portfolio](https://omaraldulimay.github.io/projekte/courtyard.html#demo)
+
 A mobile shopping app for a fragrance brand, built with **Expo / React Native** on top of the **Shopify
 Storefront API**. Its centrepiece is a **scent finder**: five short questions, three personal recommendations,
 each with a match score and a plain-language reason.
